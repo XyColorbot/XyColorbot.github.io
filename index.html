@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XyColorbot</title>
+<style>
+/* Reset and base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 60px;
+}
+/* Top nav */
+.top-nav {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+.top-nav a {
+  text-decoration: none;
+  color: #444;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+.top-nav a:hover { color: #000; }
+/* Header + links */
+header img { width: 180px; height: auto; margin-bottom: 20px; }
+h1 { font-size: 2.5rem; margin-bottom: 30px; color: #444; }
+.links { display: flex; gap: 20px; justify-content: center; align-items: center; }
+.links a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.links a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.links img { width: 32px; height: 32px; }
+
+/* Re-color icons */
+.youtube-icon { filter: invert(27%) sepia(92%) saturate(7486%) hue-rotate(356deg) brightness(92%) contrast(113%); }
+.discord-icon { filter: invert(42%) sepia(14%) saturate(2473%) hue-rotate(211deg) brightness(95%) contrast(94%); }
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.9rem;
+  color: #888;
+}
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <a href="Buy-Valorant-Colorbot.html">Shop</a>
+  <a href="showcase-best-colorbot.html">Showcase</a>
+  <a href="#">Fueaters</a>
+</nav>
+
+<header>
+  <img src="logo.png" alt="XyColorbot Logo">
+  <h1>XyColorbot</h1>
+</header>
+
+<div class="links">
+  <a href="https://discord.gg/8rFc8ypn" target="_blank" title="Join our Discord">
+    <img class="discord-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" alt="Discord">
+  </a>
+  <a href="https://www.youtube.com/@ReapersDB" target="_blank" title="Visit our YouTube">
+    <img class="youtube-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube">
+  </a>
+</div>
+
+<footer>
+  &copy; 2025 XyColorbot. All rights reserved.
+</footer>
+
+</body>
+</html>
